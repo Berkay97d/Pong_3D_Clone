@@ -33,6 +33,7 @@ public class BallController : MonoBehaviour
     {
         startScreen.SetActive(false);
         rival.CheckHardness();
+        ballRb.gameObject.SetActive(true);
         foreach (var player in players)
         {
             player.SetActive(true);
@@ -40,6 +41,8 @@ public class BallController : MonoBehaviour
         gameObject.SetActive(true);
         StartCoroutine(ThrowBall());
     }
+    
+    
 
     
     public IEnumerator ThrowBall()
