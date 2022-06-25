@@ -38,7 +38,7 @@ public class EndGame : MonoBehaviour
     private void CheckGameOver()
     {
         
-        if (Convert.ToInt32(P1ScoreText.text) == 1)
+        if (Convert.ToInt32(P1ScoreText.text) == 7)
         {
             endScreen.SetActive(true);
             p1Win.SetActive(true);
@@ -50,7 +50,7 @@ public class EndGame : MonoBehaviour
             }
         }
 
-        if (Convert.ToInt32(P2ScoreText.text) == 1)
+        if (Convert.ToInt32(P2ScoreText.text) == 7)
         {
             endScreen.SetActive(true);
             p1Win.SetActive(false);

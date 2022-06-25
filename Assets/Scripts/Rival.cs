@@ -12,9 +12,9 @@ public class Rival : MonoBehaviour
     [SerializeField] private TextMeshProUGUI hardness;
     
     private const float Range = 3.85f;
-    
 
-    void Update()
+
+    private void FixedUpdate()
     {
         Move();
     }
@@ -46,13 +46,13 @@ public class Rival : MonoBehaviour
         switch (level)
         {
             case "Easy":
-                responseRate = 0.030f;
+                responseRate = 0.075f;
                 break;
             case "Medium":
-                responseRate = 0.045f;
+                responseRate = 0.115f;
                 break;
             case "Hard":
-                responseRate = 0.060f;
+                responseRate = 0.200f;
                 break;
         }
     }

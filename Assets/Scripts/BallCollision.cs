@@ -34,7 +34,8 @@ public class BallCollision : MonoBehaviour
             p1Score++;
             P1ScoreText.text = p1Score.ToString();
         }
-        
+
+        ballController.isBallThrowen = false;
         ResetPlayersPosition();
         RelocateBall();
         StartCoroutine(ballController.ThrowBall());
