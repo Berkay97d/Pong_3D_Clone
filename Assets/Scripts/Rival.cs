@@ -52,7 +52,7 @@ public class Rival : MonoBehaviour
                 responseRate = 0.115f;
                 break;
             case "Hard":
-                responseRate = 0.200f;
+                responseRate = 0.220f;
                 break;
         }
     }
